@@ -8,9 +8,4 @@ resource VirtualNetwork 'Microsoft.Network/virtualNetworks@2021-03-01' = {
     CreatedBy: 'Robin'
     Environment: 'Prooduction'
   }
-  properties:{
-    addressSpace: {
-      addressPrefixes: AddressSpace 
-    }
-  }
 }
