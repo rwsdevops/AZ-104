@@ -5,12 +5,6 @@
 -Setting Subscription
 #>
 
-#Check PowerShell version
-$PSVersionTable
-
-#Check Az version
-az version
-
 #Find,Update and or Install AZ Module
 Find-Module -Name Az   
 Update-Module -Name AZ
