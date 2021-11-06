@@ -1,0 +1,18 @@
+#A script to log in to Azure AD, retrieve a list of users, and create a user.
+
+
+#Login into Azure AD
+az login
+
+#List AD Users
+az ad user List
+
+#List a specific AD user
+az ad user list --filter "displayname eq 'Frodo Baggins'"
+
+az version
+#Create a new user
+az ad user create --display-name "Peter Guillam" 
+  --password "Cobble_P0t"
+  --user-principal-name peter.guillam@robin-spencer.co.uk 
+  --force-change-password-next-login true
